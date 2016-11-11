@@ -32,13 +32,19 @@ Steps to clone repo and install in IDE
   all these url paths follow the host url (localhost:8888)
   
     /size?msg=Whatever message you want
+    
     /concate?msg1=A Message&msg2= another message
+    
     /perimeter?width=12.00&length=20.22
-    /books //returns the array of current books, since no db this is blank every time you start the app 
+    
+    /books //returns the array of current books, since no db this is blank every time you start the app
+    
     /books?title=sometitle&year= 11111 //even though this is constructed like the other this is would actually do db work if
-                                       // the db was currently configed proprly
+                                       // the db was currently configed properly
+    
     /books //would then contain the book you entered if it was a valid book
     
+  
     There a couple listed that I have not gone over- look through the current code and see if you can figure them out :)
     
     To make it easier if you have trouble constructing the url properly consider getting a app like Postman          https://www.getpostman.com/. It makes building the requests easy.
