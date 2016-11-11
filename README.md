@@ -7,7 +7,7 @@ This is the start of a simple git hub repo to utilize for my groups capstone pro
 Please if you are not part of the team do not push anything to this repo.
 
 Steps to clone repo and install in IDE
-  1. in the folder of your choice do this command : git clone https://github.com/sjachimowicz/capstone.git
+  1. in the folder of your choice run this command line : git clone https://github.com/sjachimowicz/capstone.git
   2. (I'm using Eclipse so this part might be different) In your IDE you are going to want to import the maven project 
       This is done so in Eclipse by going to File -> Import Project -> Existing Maven Project
   3. In the import wizard select 'Existing Maven Projects' 
