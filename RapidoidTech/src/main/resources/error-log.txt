@@ -13222,3 +13222,1624 @@ Caused by: java.lang.StackOverflowError
 17:02:15.447 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
 17:02:15.448 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
 17:02:15.451 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+17:15:36.181 [watcher1] INFO  org.rapidoid.setup.App - Detected class or resource changes
+18:14:24.041 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:14:24.044 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 15308@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:14:24.235 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:14:24.240 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:14:24.240 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:14:24.240 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:14:24.251 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:14:24.252 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:14:24.253 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:14:24.351 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 97ms | searched = 8 | found = [1m[NameTutorial][0m
+18:14:24.406 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:14:24.432 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:14:24.680 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:14:24.680 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:14:24.709 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:14:24.749 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:14:24.749 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:14:24.749 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:14:24.749 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:14:24.779 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 30ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:14:24.780 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:14:24.780 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:14:24.781 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:14:24.781 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:14:24.781 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:14:24.781 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:14:24.781 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:14:24.796 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:14:24.855 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:14:24.856 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:14:24.857 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:14:24.957 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:14:24.983 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:14:24.985 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:14:25.076 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:14:25.077 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:14:25.078 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:14:25.078 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:14:25.317 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:14:25.453 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:14:25.487 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:14:25.806 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:14:25.807 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:14:25.811 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:14:26.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:14:26.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:14:26.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:14:26.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:14:26.192 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:14:26.192 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:14:26.192 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:14:26.192 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:14:26.198 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:14:26.198 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:14:26.198 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:14:26.198 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:14:26.203 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:14:26.203 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:14:26.203 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:14:26.203 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:14:26.210 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:14:26.210 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:14:26.210 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:14:26.210 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:14:26.211 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:14:26.244 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:14:26.244 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:14:26.244 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:14:26.276 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:14:26.278 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.278 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.279 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.279 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.280 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.287 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.288 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.290 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.293 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:26.294 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:14:56.919 [executor2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 102, SQLState: S0001
+18:14:56.919 [executor2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Incorrect syntax near 't'.
+18:14:56.922 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.u.U.rte(U.java:428)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:326)
+	at org.rapidoid.http.handler.MethodReqHandler.handleReq(MethodReqHandler.java:49)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:324)
+	... 6 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458)
+	at application.Main$1.getTickets(Main.java:56)
+	... 11 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:123)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:91)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2066)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1863)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355)
+	at org.hibernate.loader.Loader.doList(Loader.java:2554)
+	at org.hibernate.loader.Loader.doList(Loader.java:2540)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370)
+	at org.hibernate.loader.Loader.list(Loader.java:2365)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:353)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:1909)
+	at org.hibernate.internal.AbstractSessionImpl.list(AbstractSessionImpl.java:311)
+	at org.hibernate.internal.SQLQueryImpl.list(SQLQueryImpl.java:141)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449)
+	... 12 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near 't'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:285)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:82)
+	... 27 more
+
+18:16:08.718 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:16:08.721 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 22388@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:16:08.933 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:16:08.938 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:16:08.938 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:16:08.938 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:16:08.947 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:16:08.948 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:16:08.948 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:16:09.034 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 86ms | searched = 8 | found = [1m[NameTutorial][0m
+18:16:09.086 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:16:09.112 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:16:09.363 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:16:09.364 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:16:09.416 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:16:09.458 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:16:09.458 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:16:09.458 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:16:09.458 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:16:09.489 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 31ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:16:09.489 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:16:09.489 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:16:09.490 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:16:09.506 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:16:09.554 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:16:09.555 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:16:09.556 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:16:09.665 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:16:09.695 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:16:09.697 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:16:09.778 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:16:09.778 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:16:09.778 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:16:09.779 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:16:10.049 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:16:10.197 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:16:10.230 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:16:10.563 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:16:10.566 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:16:10.571 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:16:11.008 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:16:11.008 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:16:11.008 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:16:11.008 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:16:11.313 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:16:11.313 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:16:11.313 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:16:11.313 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:16:11.606 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:16:11.606 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:16:11.606 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:16:11.606 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:16:11.891 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:16:11.891 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:16:11.891 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:16:11.891 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:16:12.166 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:16:12.167 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:16:12.167 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:16:12.167 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:16:12.167 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:16:12.199 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:16:12.199 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:16:12.199 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:16:12.228 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:16:12.230 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.231 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.231 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.232 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.232 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.237 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.238 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.239 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.242 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:16:12.243 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:21.718 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:22:21.720 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 13956@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:22:21.908 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:22:21.912 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:22:21.912 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:22:21.912 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:22:21.922 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:22:21.922 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:22:21.923 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:22:22.016 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 92ms | searched = 8 | found = [1m[NameTutorial][0m
+18:22:22.066 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:22:22.094 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:22:22.343 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:22:22.343 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:22:22.365 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:22:22.402 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:22:22.402 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:22:22.402 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:22:22.403 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:22:22.439 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 36ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:22:22.439 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:22:22.439 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:22:22.439 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:22:22.439 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:22:22.440 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:22:22.457 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:22:22.511 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:22:22.512 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:22:22.513 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:22:22.606 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:22:22.629 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:22:22.630 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:22:22.712 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:22:22.712 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:22:22.712 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:22:22.714 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:22:22.945 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:22:23.101 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:22:23.141 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:22:23.445 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:22:23.445 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:22:23.447 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:22:23.857 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:22:23.857 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:22:23.857 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:22:23.857 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:22:23.864 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:22:23.864 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:22:23.864 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:22:23.864 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:22:23.868 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:22:23.869 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:22:23.869 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:22:23.869 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:22:23.872 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:22:23.872 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:22:23.872 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:22:23.872 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:22:23.878 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:22:23.878 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:22:23.878 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:22:23.878 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:22:23.878 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:22:23.911 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:22:23.911 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:22:23.911 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:22:23.945 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:22:23.947 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.948 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.948 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.949 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.950 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.955 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.957 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.960 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.962 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:23.963 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:22:36.260 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.u.U.rte(U.java:428)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:326)
+	at org.rapidoid.http.handler.MethodReqHandler.handleReq(MethodReqHandler.java:49)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:324)
+	... 6 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.MappingException: No Dialect mapping for JDBC type: -9
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458)
+	at application.Main$1.getTickets(Main.java:56)
+	... 11 more
+Caused by: org.hibernate.MappingException: No Dialect mapping for JDBC type: -9
+	at org.hibernate.dialect.TypeNames.get(TypeNames.java:87)
+	at org.hibernate.dialect.TypeNames.get(TypeNames.java:118)
+	at org.hibernate.dialect.Dialect.getHibernateTypeName(Dialect.java:653)
+	at org.hibernate.loader.custom.JdbcResultMetadata.getHibernateType(JdbcResultMetadata.java:93)
+	at org.hibernate.loader.custom.ScalarResultColumnProcessor.performDiscovery(ScalarResultColumnProcessor.java:62)
+	at org.hibernate.loader.custom.CustomLoader.autoDiscoverTypes(CustomLoader.java:498)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2074)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1863)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355)
+	at org.hibernate.loader.Loader.doList(Loader.java:2554)
+	at org.hibernate.loader.Loader.doList(Loader.java:2540)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370)
+	at org.hibernate.loader.Loader.list(Loader.java:2365)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:353)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:1909)
+	at org.hibernate.internal.AbstractSessionImpl.list(AbstractSessionImpl.java:311)
+	at org.hibernate.internal.SQLQueryImpl.list(SQLQueryImpl.java:141)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449)
+	... 12 more
+
+18:36:37.849 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:36:37.852 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 21144@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:36:38.041 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:36:38.046 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:36:38.046 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:36:38.046 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:36:38.055 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:36:38.055 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:36:38.056 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:36:38.149 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 93ms | searched = 8 | found = [1m[NameTutorial][0m
+18:36:38.201 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:36:38.227 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:36:38.475 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:36:38.475 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:36:38.494 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:36:38.529 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:36:38.529 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:36:38.529 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:36:38.530 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:36:38.559 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 29ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:36:38.559 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:36:38.560 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:36:38.561 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:36:38.561 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:36:38.561 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:36:38.561 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:36:38.561 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:36:38.575 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:36:38.621 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:36:38.622 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:36:38.623 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:36:38.721 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:36:38.744 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:36:38.747 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:36:38.831 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:36:38.832 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:36:38.832 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:36:38.834 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:36:39.065 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:36:39.207 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:36:39.243 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:36:39.566 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:36:39.567 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:36:39.570 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:36:39.883 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:36:39.883 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:36:39.883 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:36:39.883 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:36:39.890 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:36:39.890 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:36:39.890 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:36:39.890 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:36:39.894 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:36:39.895 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:36:39.895 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:36:39.895 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:36:39.897 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:36:39.897 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:36:39.897 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:36:39.898 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:36:39.902 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:36:39.902 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:36:39.903 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:36:39.903 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:36:39.903 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:36:39.938 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:36:39.938 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:36:39.938 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:36:39.973 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:36:39.975 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.975 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.976 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.977 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.977 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.983 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.987 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.989 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.992 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:39.993 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:36:46.781 [executor2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1093
+18:36:46.781 [executor2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - The column name Date_Closed is not valid.
+18:36:46.784 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.u.U.rte(U.java:428)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:326)
+	at org.rapidoid.http.handler.MethodReqHandler.handleReq(MethodReqHandler.java:49)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:324)
+	... 6 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458)
+	at application.Main$1.getTickets(Main.java:56)
+	... 11 more
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.loader.Loader.doList(Loader.java:2557)
+	at org.hibernate.loader.Loader.doList(Loader.java:2540)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370)
+	at org.hibernate.loader.Loader.list(Loader.java:2365)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:353)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:1909)
+	at org.hibernate.internal.AbstractSessionImpl.list(AbstractSessionImpl.java:311)
+	at org.hibernate.internal.SQLQueryImpl.list(SQLQueryImpl.java:141)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449)
+	... 12 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The column name Date_Closed is not valid.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:656)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getTimestamp(SQLServerResultSet.java:2477)
+	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:74)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:267)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:263)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:338)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2969)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1696)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1628)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1515)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:726)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:921)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355)
+	at org.hibernate.loader.Loader.doList(Loader.java:2554)
+	... 21 more
+
+18:38:14.368 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:38:14.371 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 23136@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:38:14.631 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:38:14.641 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:38:14.641 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:38:14.642 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:38:14.656 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:38:14.657 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:38:14.658 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:38:15.054 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 397ms | searched = 8 | found = [1m[NameTutorial][0m
+18:38:15.112 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:38:15.141 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:38:15.391 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:38:15.391 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:38:15.440 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:38:15.481 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:38:15.481 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:38:15.481 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:38:15.481 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:38:15.511 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 30ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:38:15.511 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:38:15.512 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:38:15.513 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:38:15.513 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:38:15.513 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:38:15.513 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:38:15.526 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:38:15.578 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:38:15.579 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:38:15.580 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:38:15.697 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:38:15.740 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:38:15.741 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:38:15.874 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:38:15.875 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:38:15.875 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:38:15.876 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:38:16.382 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:38:16.538 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:38:16.571 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:38:16.900 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:38:16.901 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:38:16.902 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:38:17.174 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:38:17.175 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:38:17.175 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:38:17.175 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:38:17.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:38:17.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:38:17.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:38:17.180 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:38:17.188 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:38:17.189 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:38:17.189 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:38:17.189 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:38:17.192 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:38:17.193 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:38:17.193 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:38:17.193 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:38:17.200 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:38:17.200 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:38:17.200 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:38:17.200 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:38:17.201 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:38:17.247 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:38:17.247 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:38:17.247 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:38:17.378 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:38:17.385 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.386 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.387 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.388 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.389 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.400 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.403 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.406 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.411 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:17.412 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:38:21.567 [executor2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1093
+18:38:21.567 [executor2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - The column name Date_Closed is not valid.
+18:38:21.570 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.u.U.rte(U.java:428)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:326)
+	at org.rapidoid.http.handler.MethodReqHandler.handleReq(MethodReqHandler.java:49)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:324)
+	... 6 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458)
+	at application.Main$1.getTickets(Main.java:56)
+	... 11 more
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.loader.Loader.doList(Loader.java:2557)
+	at org.hibernate.loader.Loader.doList(Loader.java:2540)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370)
+	at org.hibernate.loader.Loader.list(Loader.java:2365)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:353)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:1909)
+	at org.hibernate.internal.AbstractSessionImpl.list(AbstractSessionImpl.java:311)
+	at org.hibernate.internal.SQLQueryImpl.list(SQLQueryImpl.java:141)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449)
+	... 12 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The column name Date_Closed is not valid.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:656)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getTimestamp(SQLServerResultSet.java:2477)
+	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:74)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:267)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:263)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:338)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2969)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1696)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1628)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1515)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:726)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:921)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355)
+	at org.hibernate.loader.Loader.doList(Loader.java:2554)
+	... 21 more
+
+18:39:28.445 [watcher1] INFO  org.rapidoid.setup.App - Detected class or resource changes
+18:39:39.074 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+18:39:39.077 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 14948@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+18:39:39.275 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+18:39:39.279 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+18:39:39.280 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+18:39:39.280 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+18:39:39.291 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+18:39:39.291 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+18:39:39.292 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+18:39:39.381 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 89ms | searched = 8 | found = [1m[NameTutorial][0m
+18:39:39.433 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+18:39:39.460 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+18:39:39.709 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+18:39:39.709 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+18:39:39.731 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:39:39.767 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:39:39.767 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+18:39:39.767 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+18:39:39.767 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+18:39:39.800 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 33ms | searched = 8 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+18:39:39.800 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+18:39:39.801 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+18:39:39.802 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+18:39:39.816 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+18:39:39.885 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+18:39:39.889 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:39:39.890 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+18:39:40.012 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+18:39:40.035 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:39:40.039 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+18:39:40.128 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+18:39:40.128 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+18:39:40.129 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+18:39:40.130 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:39:40.382 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+18:39:40.526 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+18:39:40.569 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+18:39:40.889 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+18:39:40.890 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+18:39:40.941 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+18:39:41.393 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+18:39:41.393 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+18:39:41.393 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:39:41.393 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+18:39:41.789 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+18:39:41.789 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+18:39:41.789 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:39:41.789 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+18:39:42.119 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+18:39:42.119 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+18:39:42.119 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:39:42.119 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+18:39:42.420 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+18:39:42.420 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+18:39:42.421 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+18:39:42.421 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+18:39:42.744 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+18:39:42.745 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+18:39:42.745 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+18:39:42.745 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+18:39:42.745 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+18:39:42.777 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:39:42.777 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+18:39:42.777 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+18:39:42.807 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:39:42.809 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.810 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.810 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.811 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.811 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.816 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.819 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.820 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.826 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:42.834 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:39:48.743 [executor2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1093
+18:39:48.743 [executor2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - The column name Date_Closed is not valid.
+18:39:48.746 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+java.lang.RuntimeException: Cannot invoke method 'getTickets' with args: [123]
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.u.U.rte(U.java:428)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:326)
+	at org.rapidoid.http.handler.MethodReqHandler.handleReq(MethodReqHandler.java:49)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.rapidoid.cls.Cls.invoke(Cls.java:324)
+	... 6 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458)
+	at application.Main$1.getTickets(Main.java:56)
+	... 11 more
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.loader.Loader.doList(Loader.java:2557)
+	at org.hibernate.loader.Loader.doList(Loader.java:2540)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370)
+	at org.hibernate.loader.Loader.list(Loader.java:2365)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:353)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:1909)
+	at org.hibernate.internal.AbstractSessionImpl.list(AbstractSessionImpl.java:311)
+	at org.hibernate.internal.SQLQueryImpl.list(SQLQueryImpl.java:141)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449)
+	... 12 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The column name Date_Closed is not valid.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:656)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getTimestamp(SQLServerResultSet.java:2477)
+	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:74)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:267)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:263)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:338)
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2969)
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1696)
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1628)
+	at org.hibernate.loader.Loader.getRow(Loader.java:1515)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:726)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:921)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355)
+	at org.hibernate.loader.Loader.doList(Loader.java:2554)
+	... 21 more
+
+18:40:05.573 [watcher1] INFO  org.rapidoid.setup.App - Detected class or resource changes
+18:40:10.056 [server1] INFO  org.rapidoid.util.Msc - [1m----------------------------------[0m
+18:40:10.056 [server1] INFO  org.rapidoid.util.Msc - [1mRestarting the web application...[0m
+18:40:10.056 [server1] INFO  org.rapidoid.util.Msc - [1m----------------------------------[0m
+18:40:10.057 [server1] INFO  org.rapidoid.ioc.IoCContextImpl - Resetting IoC context | context = [application.NameTutorial@572593338]
+18:40:10.062 [server1] INFO  org.rapidoid.commons.Environment - No profiles were specified, activating 'default' profile
+18:40:10.064 [server1] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = [1mDEV[0m
+18:40:10.064 [server1] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = [1mdev[0m
+18:40:10.064 [server1] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = [1mDEV[0m | profiles = [1m[default, dev][0m
+18:40:10.071 [server1] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-default.yml, default-config-dev.yml, config.yml, config-default.yml, config-dev.yml][0m
+18:40:10.077 [server1] WARN  org.rapidoid.jpa.JPAUtil - A custom EMF was already assigned, won't bootstrap JPA!
+18:40:10.077 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+18:40:10.077 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.078 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.078 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.078 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.078 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.080 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.082 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.083 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.086 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.087 [server1] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+18:40:10.087 [server1] INFO  org.rapidoid.setup.App - [1mSuccessfully restarted the application![0m
+19:18:07.986 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+19:18:07.989 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 20800@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+19:18:08.174 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+19:18:08.179 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+19:18:08.179 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+19:18:08.179 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+19:18:08.188 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+19:18:08.188 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+19:18:08.189 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+19:18:08.272 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 83ms | searched = 9 | found = [1m[LoginCustomer, NameTutorial][0m
+19:18:08.323 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+19:18:08.351 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+19:18:08.600 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+19:18:08.600 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+19:18:08.653 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:18:08.691 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:18:08.691 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+19:18:08.691 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:18:08.691 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+19:18:08.725 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 33ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+19:18:08.725 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+19:18:08.725 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:18:08.725 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+19:18:08.725 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+19:18:08.726 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:18:08.727 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+19:18:08.727 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:18:08.740 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+19:18:08.791 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+19:18:08.792 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:18:08.793 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+19:18:08.894 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19:18:08.917 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:18:08.920 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19:18:09.002 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+19:18:09.003 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+19:18:09.003 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19:18:09.004 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:18:09.255 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+19:18:09.397 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19:18:09.438 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+19:18:09.736 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+19:18:09.737 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+19:18:09.739 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+19:18:10.096 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+19:18:10.096 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+19:18:10.096 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:18:10.096 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+19:18:10.125 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+19:18:10.125 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+19:18:10.125 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:18:10.125 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+19:18:10.135 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+19:18:10.135 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+19:18:10.136 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:18:10.136 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+19:18:10.140 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+19:18:10.140 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+19:18:10.140 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:18:10.140 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+19:18:10.146 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+19:18:10.146 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+19:18:10.146 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+19:18:10.146 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+19:18:10.147 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+19:18:10.181 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:18:10.181 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+19:18:10.181 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:18:10.183 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.185 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+19:18:10.217 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:18:10.218 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.218 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.219 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.219 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.220 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.224 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.225 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.227 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.229 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:18:10.230 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:24:30.158 [executor3] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.IllegalArgumentException: DATA[username] must NOT be null!
+java.lang.IllegalArgumentException: DATA[username] must NOT be null!
+	at org.rapidoid.u.U.illegal(U.java:432)
+	at org.rapidoid.u.U.notNull(U.java:479)
+	at org.rapidoid.http.impl.ReqImpl.data(ReqImpl.java:349)
+	at org.rapidoid.goodies.LoginHandler.execute(LoginHandler.java:40)
+	at org.rapidoid.goodies.LoginHandler.execute(LoginHandler.java:32)
+	at org.rapidoid.http.handler.optimized.DelegatingParamsAwareReqRespHandler.handleReq(DelegatingParamsAwareReqRespHandler.java:48)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+19:43:20.022 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+19:43:20.025 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 23100@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+19:43:20.215 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+19:43:20.220 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+19:43:20.220 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+19:43:20.220 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+19:43:20.229 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+19:43:20.230 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+19:43:20.230 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+19:43:20.314 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 84ms | searched = 9 | found = [1m[NameTutorial][0m
+19:43:20.376 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+19:43:20.402 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+19:43:20.652 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+19:43:20.652 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+19:43:20.673 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:43:20.709 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:43:20.709 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+19:43:20.709 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:43:20.710 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+19:43:20.739 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 29ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+19:43:20.739 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+19:43:20.739 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:43:20.739 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+19:43:20.739 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+19:43:20.740 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:43:20.741 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+19:43:20.741 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:43:20.757 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+19:43:20.805 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+19:43:20.806 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:43:20.807 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+19:43:20.911 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19:43:20.936 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:43:20.937 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19:43:21.024 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+19:43:21.025 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+19:43:21.025 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19:43:21.027 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:43:21.260 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+19:43:21.396 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19:43:21.430 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+19:43:21.749 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+19:43:21.749 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+19:43:21.751 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+19:43:22.025 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+19:43:22.025 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+19:43:22.025 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:43:22.025 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+19:43:22.031 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+19:43:22.031 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+19:43:22.031 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:43:22.031 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+19:43:22.036 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+19:43:22.036 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+19:43:22.036 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:43:22.036 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+19:43:22.039 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+19:43:22.039 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+19:43:22.039 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:43:22.039 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+19:43:22.044 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+19:43:22.044 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+19:43:22.044 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+19:43:22.044 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+19:43:22.045 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+19:43:22.078 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:43:22.078 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+19:43:22.078 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:43:22.080 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.082 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+19:43:22.119 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:43:22.119 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.120 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.120 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.120 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.122 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.131 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.134 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.136 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.140 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:22.140 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:43:41.786 [executor2] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
+19:57:47.741 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+19:57:47.744 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 24548@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+19:57:47.928 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+19:57:47.933 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+19:57:47.934 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+19:57:47.934 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+19:57:47.943 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+19:57:47.943 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+19:57:47.944 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+19:57:48.032 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 88ms | searched = 9 | found = [1m[NameTutorial][0m
+19:57:48.084 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+19:57:48.112 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+19:57:48.361 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+19:57:48.361 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+19:57:48.384 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:57:48.423 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:57:48.423 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+19:57:48.423 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+19:57:48.423 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+19:57:48.454 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 31ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+19:57:48.454 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+19:57:48.454 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:57:48.454 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+19:57:48.454 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:57:48.455 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+19:57:48.456 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+19:57:48.470 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+19:57:48.518 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+19:57:48.519 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:57:48.520 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+19:57:48.614 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19:57:48.639 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:57:48.642 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+19:57:48.726 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+19:57:48.727 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+19:57:48.727 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+19:57:48.728 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:57:48.966 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+19:57:49.100 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+19:57:49.138 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+19:57:49.451 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+19:57:49.452 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+19:57:49.454 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+19:57:49.783 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+19:57:49.783 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+19:57:49.783 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:57:49.783 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+19:57:49.790 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+19:57:49.790 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+19:57:49.790 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:57:49.790 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+19:57:49.796 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+19:57:49.796 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+19:57:49.796 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:57:49.796 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+19:57:49.801 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+19:57:49.801 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+19:57:49.801 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+19:57:49.801 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+19:57:49.809 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+19:57:49.809 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+19:57:49.809 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+19:57:49.809 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+19:57:49.810 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+19:57:49.847 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:57:49.847 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+19:57:49.847 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+19:57:49.851 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.853 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+19:57:49.883 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = true
+19:57:49.884 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.884 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.885 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.885 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.886 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.890 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.891 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.893 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.896 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:49.897 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+19:57:55.603 [executor1] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
+20:02:31.567 [watcher1] INFO  org.rapidoid.setup.App - Detected class or resource changes
+20:02:39.654 [server4] INFO  org.rapidoid.util.Msc - [1m----------------------------------[0m
+20:02:39.654 [server4] INFO  org.rapidoid.util.Msc - [1mRestarting the web application...[0m
+20:02:39.654 [server4] INFO  org.rapidoid.util.Msc - [1m----------------------------------[0m
+20:02:39.656 [server4] INFO  org.rapidoid.ioc.IoCContextImpl - Resetting IoC context | context = [application.NameTutorial@572593338]
+20:02:39.661 [server4] INFO  org.rapidoid.commons.Environment - No profiles were specified, activating 'default' profile
+20:02:39.664 [server4] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = [1mDEV[0m
+20:02:39.664 [server4] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = [1mdev[0m
+20:02:39.664 [server4] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = [1mDEV[0m | profiles = [1m[default, dev][0m
+20:02:39.672 [server4] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-default.yml, default-config-dev.yml, config.yml, config-default.yml, config-dev.yml][0m
+20:02:39.678 [server4] WARN  org.rapidoid.jpa.JPAUtil - A custom EMF was already assigned, won't bootstrap JPA!
+20:02:39.678 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.678 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+20:02:39.678 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/home[0m | roles = [1m[][0m | tx = NONE | mvc = true
+20:02:39.680 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.681 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.681 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.681 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.682 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.682 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.684 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.685 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.687 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.690 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.691 [server4] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:02:39.691 [server4] INFO  org.rapidoid.setup.App - [1mSuccessfully restarted the application![0m
+20:26:02.076 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+20:26:02.079 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 22388@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+20:26:02.264 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+20:26:02.269 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+20:26:02.269 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+20:26:02.269 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+20:26:02.278 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+20:26:02.278 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+20:26:02.279 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+20:26:02.363 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 85ms | searched = 9 | found = [1m[NameTutorial][0m
+20:26:02.414 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+20:26:02.440 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+20:26:02.689 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+20:26:02.690 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+20:26:02.748 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+20:26:02.787 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+20:26:02.788 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+20:26:02.788 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+20:26:02.788 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+20:26:02.819 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 31ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+20:26:02.819 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+20:26:02.819 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+20:26:02.820 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+20:26:02.821 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+20:26:02.821 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+20:26:02.821 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+20:26:02.821 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+20:26:02.834 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+20:26:02.883 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+20:26:02.885 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+20:26:02.887 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+20:26:02.981 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+20:26:03.005 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+20:26:03.008 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+20:26:03.090 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+20:26:03.090 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+20:26:03.090 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+20:26:03.091 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+20:26:03.318 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+20:26:03.455 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+20:26:03.489 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+20:26:03.806 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+20:26:03.807 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+20:26:03.809 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+20:26:04.083 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+20:26:04.083 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+20:26:04.083 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+20:26:04.083 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+20:26:04.090 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+20:26:04.090 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+20:26:04.090 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+20:26:04.090 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+20:26:04.095 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+20:26:04.095 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+20:26:04.095 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+20:26:04.095 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+20:26:04.099 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+20:26:04.099 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+20:26:04.099 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+20:26:04.099 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+20:26:04.105 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+20:26:04.105 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+20:26:04.105 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+20:26:04.105 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+20:26:04.106 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+20:26:04.144 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+20:26:04.144 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+20:26:04.144 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+20:26:04.146 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.148 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+20:26:04.177 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/home[0m | roles = [1m[][0m | tx = NONE | mvc = true
+20:26:04.179 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.180 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.181 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.181 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.182 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.183 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.189 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.190 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.193 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.197 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:04.198 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+20:26:11.230 [executor1] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
+21:10:56.518 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+21:10:56.521 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 17436@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+21:10:56.711 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+21:10:56.715 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+21:10:56.716 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+21:10:56.716 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+21:10:56.725 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+21:10:56.725 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+21:10:56.726 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+21:10:56.819 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 93ms | searched = 9 | found = [1m[NameTutorial][0m
+21:10:56.877 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+21:10:56.904 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+21:10:57.154 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+21:10:57.154 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+21:10:57.176 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:10:57.216 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:10:57.216 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+21:10:57.216 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:10:57.216 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+21:10:57.246 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 30ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+21:10:57.247 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+21:10:57.247 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:10:57.247 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+21:10:57.247 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:10:57.247 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+21:10:57.247 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:10:57.248 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+21:10:57.249 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:10:57.262 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+21:10:57.314 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+21:10:57.315 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:10:57.316 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21:10:57.412 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:10:57.435 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:10:57.437 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:10:57.521 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+21:10:57.521 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+21:10:57.521 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+21:10:57.522 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:10:58.192 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+21:10:58.334 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+21:10:58.375 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+21:10:58.778 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+21:10:58.778 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+21:10:58.780 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+21:10:59.548 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+21:10:59.548 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+21:10:59.548 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:10:59.548 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+21:10:59.554 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+21:10:59.555 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+21:10:59.555 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:10:59.555 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+21:10:59.571 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+21:10:59.571 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+21:10:59.571 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:10:59.571 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+21:10:59.581 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+21:10:59.581 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+21:10:59.581 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:10:59.581 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+21:10:59.614 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+21:10:59.614 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+21:10:59.614 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+21:10:59.614 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+21:10:59.614 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+21:10:59.674 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:10:59.674 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+21:10:59.674 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:10:59.677 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.679 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+21:10:59.748 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/home[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:10:59.750 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.750 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.750 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.751 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.751 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.752 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.755 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.756 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.760 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.764 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:10:59.764 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:11:17.666 [executor1] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
+21:11:17.976 [executor2] ERROR org.rapidoid.http.impl.HttpIO - Error occurred when handling request! | error = java.lang.RuntimeException: Login error!
+java.lang.RuntimeException: Login error!
+	at org.rapidoid.u.U.rte(U.java:416)
+	at org.rapidoid.http.impl.RespImpl.login(RespImpl.java:376)
+	at org.rapidoid.goodies.LoginHandler.execute(LoginHandler.java:43)
+	at org.rapidoid.goodies.LoginHandler.execute(LoginHandler.java:32)
+	at org.rapidoid.http.handler.optimized.DelegatingParamsAwareReqRespHandler.handleReq(DelegatingParamsAwareReqRespHandler.java:48)
+	at org.rapidoid.http.handler.AbstractDecoratingHttpHandler$3.run(AbstractDecoratingHttpHandler.java:209)
+	at org.rapidoid.job.PredefinedContextJobWrapper.run(PredefinedContextJobWrapper.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at application.LoginCustomer.login(LoginCustomer.java:33)
+	at application.Main.lambda$5(Main.java:39)
+	at org.rapidoid.http.impl.RespImpl.login(RespImpl.java:361)
+	... 8 more
+
+21:22:25.950 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+21:22:25.953 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 16436@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+21:22:26.143 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+21:22:26.148 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+21:22:26.148 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+21:22:26.148 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+21:22:26.159 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+21:22:26.159 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+21:22:26.160 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+21:22:26.243 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 84ms | searched = 9 | found = [1m[NameTutorial][0m
+21:22:26.299 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+21:22:26.328 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+21:22:26.578 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+21:22:26.578 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+21:22:26.617 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:22:26.657 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:22:26.657 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+21:22:26.657 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:22:26.658 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+21:22:26.690 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 32ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+21:22:26.690 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+21:22:26.690 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+21:22:26.691 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:22:26.706 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+21:22:26.755 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+21:22:26.756 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:22:26.757 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21:22:26.867 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:22:26.894 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:22:26.896 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:22:26.999 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+21:22:26.999 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+21:22:27.000 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+21:22:27.001 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:22:27.716 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+21:22:27.857 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+21:22:27.895 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+21:22:28.207 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+21:22:28.208 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+21:22:28.210 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+21:22:28.919 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+21:22:28.919 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+21:22:28.919 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:22:28.919 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+21:22:28.925 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+21:22:28.927 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+21:22:28.927 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:22:28.927 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+21:22:28.943 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+21:22:28.943 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+21:22:28.943 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:22:28.943 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+21:22:28.946 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+21:22:28.946 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+21:22:28.946 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:22:28.946 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+21:22:28.952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+21:22:28.952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+21:22:28.952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+21:22:28.953 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+21:22:28.953 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+21:22:28.986 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:22:28.986 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+21:22:28.987 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:22:28.989 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:28.990 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+21:22:29.027 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/home[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:22:29.029 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.030 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.030 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.031 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.031 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.032 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.037 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.038 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.040 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.043 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:29.044 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:22:33.776 [executor2] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
+21:23:18.765 [main] INFO  o.r.config.RapidoidInitializer - Starting Rapidoid v5.2.5, built on 2016-09-29 00:47 UTC
+21:23:18.768 [main] INFO  o.r.config.RapidoidInitializer - System info | os = Windows 10 | java = 1.8.0_92 | process = 19508@Steve-PC | max memory = 3630 MB | dir = C:\capstone\RapidoidTech
+21:23:18.976 [main] INFO  org.rapidoid.commons.Environment - Configuring active profiles | profiles = [sqlserver]
+21:23:18.981 [main] INFO  org.rapidoid.commons.Environment - No production/dev/test mode was configured, inferring mode | mode = DEV
+21:23:18.981 [main] INFO  org.rapidoid.commons.Environment - Automatically activating mode-specific profile | profile = dev
+21:23:18.982 [main] INFO  org.rapidoid.commons.Environment - Initialized environment | mode = DEV | profiles = [sqlserver, dev]
+21:23:18.991 [main] INFO  org.rapidoid.config.ConfigImpl - Loaded configuration | files = [1m[default-config.yml, default-config-dev.yml, config.yml, config-sqlserver.yml, config-dev.yml][0m
+21:23:18.991 [main] INFO  org.rapidoid.setup.App - Inferring application root | main = [1mapplication.Main[0m | package = [1mapplication[0m
+21:23:18.992 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Controller, @Service, @Run, @Named, @Singleton][0m | packages = [1m[application][0m
+21:23:19.084 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 92ms | searched = 9 | found = [1m[NameTutorial][0m
+21:23:19.143 [main] INFO  org.rapidoid.setup.WatchForChanges - [1mWatching classpath for changes...[0m | classpath = [C:\capstone\RapidoidTech\target\classes]
+21:23:19.183 [server] INFO  o.r.net.impl.RapidoidServerLoop - [1mStarting server[0m | address = [1m0.0.0.0[0m | port = [1m8000[0m | I/O workers = 4 | sync = true | accept = non-blocking
+21:23:19.426 [main] INFO  org.rapidoid.setup.Setup - [1mServer has started[0m | setup = app | home = [1mhttp://localhost:8000[0m
+21:23:19.426 [main] INFO  org.rapidoid.setup.Setup - [1mStatic resources will be served from the following locations[0m | setup = app | locations = [1m[static, public, default/static, default/public][0m
+21:23:19.466 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET,POST[0m | path = [1m/hi/{name}[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:23:19.524 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:23:19.524 [main] INFO  org.rapidoid.util.Msc - Bootstrapping JPA (Hibernate)...
+21:23:19.524 [main] INFO  org.rapidoid.util.Msc - [1m--------------------------------[0m
+21:23:19.524 [main] INFO  org.rapidoid.scan.ClasspathUtil - Scanning classpath | annotated = [1m[@Entity][0m | packages = [1m[application][0m
+21:23:19.561 [main] INFO  org.rapidoid.scan.ClasspathUtil - Finished classpath scan | time = 37ms | searched = 9 | found = [1m[Book, Customer, Employee, Equipment, Ticket][0m
+21:23:19.561 [main] INFO  org.rapidoid.jpa.EMFUtil - [1mFound 5 JPA Entities[0m
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate properties:
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - [1m---------------------[0m
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.idleConnectionTestPeriod = 300
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.driver_class = com.microsoft.sqlserver.jdbc.SQLServerDriver
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.acquireIncrement = 5
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.initialPoolSize = 5
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.username = rapidoid
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxPoolSize = 100
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.minPoolSize = 5
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.hbm2ddl.auto = update
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.debug = false
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.url = jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.connection.password = *****
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Hibernate property | hibernate.c3p0.maxStatementsPerConnection = 10
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:23:19.562 [main] INFO  org.rapidoid.util.Msc - Starting Hibernate:
+21:23:19.563 [main] INFO  org.rapidoid.util.Msc - [1m-------------------[0m
+21:23:19.581 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: null
+	...]
+21:23:19.638 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+21:23:19.639 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:23:19.641 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21:23:19.757 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:23:19.787 [main] WARN  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:23:19.789 [main] WARN  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:23:19.878 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://STEVE-PC:1433;databaseName=Repairs]
+21:23:19.879 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=rapidoid, password=****}
+21:23:19.879 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+21:23:19.880 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:23:20.610 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+21:23:20.779 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+21:23:20.824 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+21:23:21.174 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+21:23:21.175 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+21:23:21.177 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+21:23:21.924 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Book
+21:23:21.924 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [year, id, title]
+21:23:21.924 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:23:21.924 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__book__3213e83f1751056c]
+21:23:21.930 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Customer
+21:23:21.930 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [vid, password, last_name, phone_number, mi, first_name, email]
+21:23:21.930 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:23:21.931 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__customer__c5df22bbf775d0b4]
+21:23:21.945 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Employee
+21:23:21.945 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [zip, address, notes, city, last_name, certification, employed, password, e_mail, employee_id, phone_number, state, first_name, job_title]
+21:23:21.945 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:23:21.945 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__employee__78113481fd1a67f7]
+21:23:21.948 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Equipment
+21:23:21.948 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [equipment_type, equipment_id]
+21:23:21.948 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+21:23:21.948 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__equipmen__c0f077c5da66c882]
+21:23:21.955 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: Repairs.dbo.Ticket
+21:23:21.955 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [summary, last_updated, notes, date_created, due_date, description, equipment, serial_number, date_opened, ticket#, date_closed, closed, asigned_to, customer, assigned_to]
+21:23:21.955 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk__ticket__asigned___3c69fb99, fk_ph9njnqkt73rl9jlroo33vvtc, fk__ticket__equipmen__3e52440b, fk_en22c9r8cqdg69i1jv4lk3jng, fk__ticket__customer__3d5e1fd2]
+21:23:21.955 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pk__ticket__8468e1ecfab85d1f]
+21:23:21.956 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+21:23:21.998 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:23:21.999 [main] INFO  org.rapidoid.util.Msc - JPA (Hibernate) is ready.
+21:23:21.999 [main] INFO  org.rapidoid.util.Msc - [1m-------------------------[0m
+21:23:22.001 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/_login[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:22.004 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/_logout[0m | roles = [1m[logged_in][0m | tx = NONE | mvc = false
+21:23:22.040 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/home[0m | roles = [1m[][0m | tx = NONE | mvc = true
+21:23:22.045 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:22.047 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:22.048 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/customer/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:22.051 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/employee/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:22.053 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/equipment/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.908 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/ticket/all[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.928 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mPOST[0m | path = [1m/books[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.932 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/size[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.937 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/concate[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.946 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/perimeter[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:23:36.947 [main] INFO  o.rapidoid.http.impl.HttpRoutesImpl - Registering handler | setup = [1mapp[0m | verbs = [1mGET[0m | path = [1m/getTickets[0m | roles = [1m[][0m | tx = NONE | mvc = false
+21:24:05.361 [executor1] WARN  org.rapidoid.crypto.Crypto - [1mApplication secret was not specified, generating random secret![0m
