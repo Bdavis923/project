@@ -14,6 +14,8 @@ import org.rapidoid.http.handler.param.CookieParamRetriever;
 import org.rapidoid.http.impl.RespImpl;
 import org.rapidoid.io.Res;
 import org.rapidoid.jpa.JPA;
+import org.rapidoid.security.Role;
+import org.rapidoid.security.annotation.Roles;
 
 import application.entity.Customer;
 import application.entity.Ticket;
@@ -23,7 +25,7 @@ public class LoginCustomer {
 	private LoginCustomer() {
 
 	}
-	public static boolean login(String username, String password) {
+	public static boolean login(Req req,String username, String password) {
 		EntityManager em = JPA.em();
 		String sqlString = "Select * from Repairs.dbo.Customer c " + "where c.password=" + password;
 		Query q = em.createNativeQuery(sqlString, Customer.class);
