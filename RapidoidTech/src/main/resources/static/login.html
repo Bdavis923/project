@@ -1,0 +1,39 @@
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var tickets;
+var testLogin = "http://localhost:8888/_login?"
+$(document).ready(function(){
+    $("#login").click(function(){
+			$.post(testLogin,
+			{
+				username: "123",
+				password: "password",
+			},
+				function(data) {
+				console.log(data);
+ 				
+            });
+        });
+	$("#ticket").click(function(){
+		 $.getJSON("http://localhost:8888/tickets",
+			
+			function(data) {
+ 				console.log(data);
+            });
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="login">Post Login</button>
+
+<button id="ticket"> Try Getting Tickets </button> 
+
+<div></div>
+
+</body>
+</html>

@@ -31,6 +31,7 @@ public class LoginCustomer {
 		Query q = em.createNativeQuery(sqlString, Customer.class);
 		List<Customer> customers = q.getResultList();
 		if (customers.size() >= 1 && customers.get(0).getPassword().equalsIgnoreCase(password)) {
+			req.response().cookies().put("yummy", username);
 			return true;
 		} else {
 			return false;

@@ -60,7 +60,7 @@ public class Main {
 				return length * width;
 			}
 
-			@GET
+			@GET(uri = "/tickets")
 			public List<Ticket> getTickets(Req req) {
 				EntityManager em = JPA.em();
 				if (req.token().get("_user") != null) {
