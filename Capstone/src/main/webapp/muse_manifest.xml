@@ -1,0 +1,56 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="fgxdesigns.com" resolutions="1x" timestamp="1475957489899">
+  <folder name="css">
+    <file name="site_global.css" crc="96087448"/>
+    <file name="master_a-master.css" crc="143760405" ref="index:repairs"/>
+    <file name="nomq_preview_master_a-master.css" crc="4044712169" ref="index:repairs"/>
+    <file name="index.css" crc="25168209" ref="index"/>
+    <file name="nomq_index.css" crc="155999207" ref="index"/>
+    <file name="repairs.css" crc="278713621" ref="repairs"/>
+    <file name="nomq_repairs.css" crc="61749898" ref="repairs"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:repairs"/>
+    <file name="museutils.js" crc="3851988764" ref="index:repairs"/>
+    <file name="whatinput.js" crc="86476730" ref="index:repairs"/>
+    <file name="museconfig.js" crc="4242129463" ref="index:repairs"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index:repairs"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index:repairs"/>
+    <file name="jquery.musemenu.js" crc="4150485998" ref="index:repairs"/>
+    <file name="webpro.js" crc="4067903014" ref="index:repairs"/>
+    <file name="musewpdisclosure.js" crc="338211507" ref="index:repairs"/>
+    <file name="pie.js" crc="3831537696" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="511146689" ref="index:repairs"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:repairs"/>
+    <file name="jquery.museresponsive.js" crc="516761069" ref="index:repairs"/>
+    <file name="require.js" crc="4108833657" ref="index:repairs"/>
+  </folder>
+  <folder name="images">
+    <file name="notebook-1280538_1920.jpg" crc="411714185" ref="index"/>
+    <file name="unknown.jpg" crc="4083466186" ref="index"/>
+    <file name="vc-tech logo.svg" crc="43283709" ref="index"/>
+    <file name="vc-tech-tracks-no-words.png" crc="3814708575" ref="index"/>
+    <file name="wood bg.jpg" crc="459583836" ref="index"/>
+    <file name="unknown-1.jpg" crc="4106962525" ref="index"/>
+    <file name="unknown-4-u3708-fr.jpg" crc="383078791" ref="index"/>
+    <file name="unknown-6.jpg" crc="4054706465" ref="index"/>
+    <file name="unknown-8.jpg" crc="3775775204" ref="index"/>
+    <file name="unknown-5.jpg" crc="168688012" ref="index"/>
+    <file name="unknown-9.jpg" crc="34871460" ref="index"/>
+    <file name="unknown-7.jpg" crc="4020150640" ref="index"/>
+    <file name="social_tw_sprite-ieu4226-fr.png" crc="3922289204" ref="index"/>
+    <file name="social_tw_sprite.png" crc="3922289204" ref="index"/>
+    <file name="social_fb_sprite-u4226-fr.png" crc="3933897356" ref="index"/>
+    <file name="social_twitter_sprite-u4225-fr.png" crc="455974337" ref="index"/>
+    <file name="social_insta_sprite-u4229-fr.png" crc="3824524396" ref="index"/>
+    <file name="unknown-4.jpg" crc="3935241204" ref="index"/>
+    <file name="unknown-7-u4094-fr.jpg" crc="402973425" ref="index"/>
+    <file name="unknown-10.jpg" crc="4191829866" ref="repairs"/>
+    <file name="toolbox.svg" crc="283865855" ref="repairs"/>
+    <file name="toolbox_poster_u5782.png" crc="3870073756" ref="repairs"/>
+    <file name="install.svg" crc="3933568637" ref="repairs"/>
+    <file name="install_poster_u5774.png" crc="305040987" ref="repairs"/>
+    <file name="vc-tech logo_poster_u5918.png" crc="4193330085" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4142002261" seo="true" mt="1475957479618" redirect="true"/>
+  <file name="repairs.html" crc="7940869" seo="true" mt="1475955682465" redirect="true"/>
+</manifest>
